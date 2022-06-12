@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Yazılım kafası web sitesi">
+    <meta name="keywords" content="yazılım kafası, web site, tasarım, tanıtım sitesi, blog sitesi, html, css, javascript,">
+    <meta name="robots" content="index, follow">
+	<title>Proje Sayfam</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+  			$("#buton").click(function(){
+				$("#prj1p1").slideToggle("slow");
+				$("#prj2p1").slideToggle("slow");
+				$("#prj3p1").slideToggle("slow");
+			});
+  		});
+		function p(){
+			const proje1 = '{"Bilgi1":"Bu projemde ornek bir OBS Giris sayfasi tasarladim"}'
+			const proje1Bilgi2='{"Bilgi2":"Tiklayarak Ulasabilirsiniz"}'
+			const proje2 = '{"Bilgi3":"Bu projemde ornek bir Akademik Personel sayfasi tasarladim"}'
+			const proje2Bilgi2='{"Bilgi4":"Tiklayarak Ulasabilirsiniz"}'
+			const proje3 = '{"Bilgi5":"Bu projemde ornek bir Kisisel Blog sayfasi tasarladim"}'
+			const proje3Bilgi2='{"Bilgi6":"Tiklayarak Ulasabilirsiniz"}'
+			
+			const obj = JSON.parse(proje1);
+			const obj1 =JSON.parse(proje1Bilgi2)
+			const obj2=JSON.parse(proje2);
+			const obj3=JSON.parse(proje2Bilgi2);
+			const obj4=JSON.parse(proje3);
+			const obj5=JSON.parse(proje3Bilgi2);
+
+			document.getElementById("prj1p1").innerHTML = "<br><br><br><b>"+obj.Bilgi1+"</b><br>"+"<b><a href='Obs_Giris_Ekrani.html'>"+obj1.Bilgi2+"</a></b>";
+			document.getElementById("prj2p1").innerHTML="<br><br><b>"+obj2.Bilgi3+"</b><br>"+"<b><a href='Akademik_Personel.html'>"+obj3.Bilgi4+"</a></b>";
+			document.getElementById("prj3p1").innerHTML="<br><br><b>"+obj4.Bilgi5+"</b><br>"+"<b><a href='Web_Ödev_Blog.html'>"+obj5.Bilgi6+"</a></b>";
+			
+		}	
+	  	
+
+  	</script>
+
+	<title>Proje Sayfam</title>
+</head>
+<body>
+	<style>
+		@import url('http://fonts.cdnfonts.com/css/sublime');
+		body{
+			background:#f5f8fa;
+			position: relative; 
+		}
+		@media (min-width: 1200px) { .container {
+    		max-width: 1200px;
+		} }
+		#mylogo{
+			width: 75px;
+			height: 75px;
+			margin-left: -200px;
+		
+		}
+		@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+		.snip1226 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.snip1226 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+.snip1226 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+.snip1226 a:before,
+.snip1226 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e67e22;
+}
+.snip1226 a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+.snip1226 li:hover a,
+.snip1226 .current a {
+  transform: translateY(100%);
+}
+	p{
+		font-style: italic;
+		font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	}
+	.carousel
+	{
+		
+		width: 700px;
+		height: 400px;
+		float: right;
+
+	}
+	</style>
+	<nav class="navbar navbar-inverse">
+		<ul class="snip1226" style="background-color: #021427;">
+			<li><a href="Web_Ödev_Anasayfa.html" data-hover="Home">Anasayfa</a></li>
+			<li><a href="Web_Ödev_Hakkımda.html" data-hover="About me">Hakkımda</a></li>
+			<li ><a href="Web_Ödev_İletişim.html" data-hover="Contact">İletişim</a></li>
+			<li><a href="Web_Ödev_Blog.html" data-hover="Blog">Blog</a></li>
+			<li class="current"><a href="Proje_Sayfam.html" data-hover="portfolio">Projelerim</a></li>
+	 	 </ul>
+	</nav>
+	<div class="container mt-3">
+		<br><br><br><br>
+		<h5><span class="label label-danger">Projeler</span></h5>
+		<div style="border-bottom: 2px solid black; width: 99%;"></div>
+		<br><br>
+		<button onclick="p()" id="buton" class="btn btn-info">Projelerim</button>
+		<p id="prj1p1" style="font-size:15px ;"></p>
+		<p id="prj2p1" style="font-size: 15px;"></p>
+		<p id="prj3p1" style="font-size: 15px;"></p>
+		<div id="slider" class="carousel slide" data-interval="1500" >
+			<div class="carousel-inner" >
+				<div class="active item"><img src="Proje.jpg" alt="" width="700" height="400"></div>
+				<div class="item"><img src="proje1.jpg" alt="" width="700" height="400"></div>
+				<div class="item"><img src="proje2.jpg" alt=""></div>
+			</div>
+			<ol class="carousel-indicators">
+				<li data-target="#slider" data-slide-to="0" class="active"></li>
+				<li data-target="#slider" data-slide-to="1"></li>
+				<li data-target="#slider" data-slide-to="2"></li>
+			</ol>   
+			<a class="carousel-control left" href="#slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="carousel-control right" href="#slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+	
+
+
+</body>
+</html>
