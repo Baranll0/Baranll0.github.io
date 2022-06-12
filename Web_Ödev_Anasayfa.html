@@ -3,429 +3,178 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
-
+	
 	<title>Anasayfa</title>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+	 $(document).ready(function(){
+		$('#slider2').carousel({
+              interval: 2000,
+              keyword: false,
+              pause: false,
+              wrap: false
+          });
+	 });
+  </script>
+  	
 </head>
-<script type="text/javascript">
-	function sosyal()
-	{
-		document.getElementById('instagram').innerHTML="İnstagram";
-	}
-</script>
-<style type="text/css">
-	#Anasayfa
-	{
-		width: 1500px;
-		height: 728px;
-		background: blue;
+<body>
+	<style>
+		body{
+			background:#f5f8fa
+		}
+		@media (min-width: 1200px) { .container {
+    		max-width: 1200px;
+		} }
+		#mylogo{
+			width: 75px;
+			height: 75px;
+			margin-left: -200px;
 		
+		}
+		@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.snip1226 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.snip1226 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+.snip1226 a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+.snip1226 a:before,
+.snip1226 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e67e22;
+}
+.snip1226 a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+.snip1226 li:hover a,
+.snip1226 .current a {
+  transform: translateY(100%);
+}
+/* Demo purposes only */
+	#pp{
+		margin-top:30px ;
+		margin-left: 20px;
 	}
-	#sol
-	{
-		width: 350px;
-		height: 728px;
-		background: #000;
-
-	}
-	#sag
-	{
-		width: 1150px;
-		height: 728px;
-		background:white;
-		float: right;
-		margin: -728px 0 0 0;
-		
-	}
-	#isim
-	{
-		color:  #000025;
-		font-size: 6rem;
-		width: 340px;
-		height: 100px;
-		font-family:"Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		line-height: 1;
-		text-transform: uppercase;
-		display: block;
-    	margin-block-start: 0.67em;
-    	margin-block-end: 0.67em;
-    	margin-inline-start: 0px;
-    	margin-inline-end: 0px;
-    	font-weight: bold;
-    	text-shadow: 0.5px 0.5px 0.5px;
-    	margin: 0px 0px 0px 0px;
-    	
-	}
-	#soyad
-	{
-		color:  #a2a2a2;
-		font-size: 6rem;
-		width: 340px;
-		height: 130px;
-		font-family:"Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		line-height: 1;
-		text-transform: uppercase;
-		display: block;
-    	margin-block-start: 0.67em;
-    	margin-block-end: 0.67em;
-    	margin-inline-start: 0px;
-    	margin-inline-end: 0px;
-    	font-weight: bold;
-    	text-shadow: 0.5px 0.5px 0.5px;
-    	text-align: center;
-    	float: right;
-    	margin-top: -95px;
- 
-	}
-	#yazi
-	{	
-		width: 700px;
-		height: 120px;
-		text-align: center;
-		margin: -550px 0 0 50px;
-		
-	}
-	#tanitimyazi
-	{
-		
-		width: 780px;
-		height: 100px;
-		margin-left: 50px;
-	}
-	#tanitim
-	{
-		width: 800px;
-		height: 100px;
-		color:  #85807d;
-		font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-   		text-transform: uppercase;
- 	    font-weight: 500;
-  	    font-size: 1rem;
-  	    width: 1400px;
-  	    height:100px;   
-	}
-	#tanitim2
-	{
-		width: 420px;
-		height: 50px;
-		
-		color:  #85807d;
-		font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-   		text-transform: uppercase;
- 	    font-weight: 500;
-  	    font-size: 1rem;
-  	    float: right;
-  	    margin-top:-115px;
-	}
-	#ben
-	{
-		width: 120px;
-		height: 120px;
-		margin-bottom:-300px ;
-		border-radius: 70px;
-		background-position:center;
-		background: repeat;
-		background-size:cover;
-		border: 3px solid #333333;
-	}
-
 	#instagram
 	{
-  		display: inline-block;
- 	 width: 35px;
- 	 height: 35px;
-  	text-align: center;
- 	 border-radius: 30px;
- 	 color: #fff;
-  	font-size: 220px;
- 	 line-height: 250px;
- 	 vertical-align: middle;
- 	 margin-top:420px ;
- 	 margin-right:200px ;
- 	 margin-bottom: 10px;
- 	 background: white;
- 
+		margin-top:400px;
+		margin-left: 10px;
+	}
+	#twitter
+	{
+		margin-left: 65px;
+		margin-top:-37px ;
+	}
+	#linkedin
+	{
+		margin-left: 120px;
+		margin-top:-40px ;
+	}
+	#github
+	{
+		margin-left: 175px;
+		margin-top: -40px;
+	}
+	#instagram:hover{
+		background:#003366 ;
+	}
+	#twitter:hover{
+		background:#003366 ;
+	}
+	#linkedin:hover{
+		background:#003366 ;
+	}
+	#github:hover{
+		background:#003366 ;
+	}
+	.carousel
+	{
+		vertical-align:middle;
+		margin:auto;
+		margin-top: 40px;
+		width: 700px;
+		height: 400px;
 
- 	 }
- 	 #instagram:hover{
- 	 	background:grey;
- 	 	border-radius: 40px;
- 	 	
- 	 }
- 	 #twitter
- 	 {
- 	 	display: inline-block;
- 	 	width: 40px;
- 	 	height: 40px;
- 	 	border-radius: 0px;
- 	 	color: #fff;
-  		font-size: 220px;
- 	 	line-height: 250px;
- 	 	vertical-align: middle;
- 	 	margin-top: -80px;
- 	 	border-radius: 65px;
- 	 	margin-left:-95px ;
- 	 	background: white;
- 	 }
- 	 #twitter:hover
- 	 {
- 	 	background:grey;
- 	 	border-radius: 40px;
- 	 }
- 	 #linkedin
- 	 {
- 	 	display: inline-block;
- 	 	width: 40px;
- 	 	height: 40px;
- 	 	border-radius: 50px;
- 	 	color: #fff;
-  		font-size: 220px;
- 	 	line-height: 250px;
- 	 	vertical-align: middle;
- 	 	margin-top: -115px;
- 	 	margin-right: -20px;
- 	 	background: white;
- 	 }
- 	 #linkedin:hover
- 	 {
- 	 	background:grey;
- 	 	border-radius: 40px;
- 	 }
- 	 #github
- 	 {
- 	 	display: inline-block;
- 	 	width: 40px;
- 	 	height: 40px;
- 	 	border-radius: 0px;
- 	 	color: #fff;
-  		font-size: 220px;
- 	 	line-height: 250px;
- 	 	vertical-align: middle;
- 	 	margin-top: -150px;
- 	 	margin-right: -120px;
- 	 	background: white;
- 	 	border-radius: 50px;
- 	 }
- 	 #github:hover
- 	 {
- 	 	background:grey;
- 	 	border-radius: 40px;
- 	 }
- 	
- 	 #Bilgilerim
- 	 {
- 	 	width: 750px;
- 	 	height:350px;
- 	 	margin:auto 55px;
- 	 	color: #7d7d7d;
- 	 	font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
- 	 	float: left;
- 	 }
- 	 #menu
- 	 {
- 	 	width: 80px;
- 	 	height: 720px;
- 	 	margin-left: 1070px;
- 	 	background: ghostwhite;
- 	 
- 	 }
- 	 #home
- 	 {
- 	 	width: 30px;
- 	 	height: 30px;
- 	 	border-radius: 40px;
- 	 	margin-top: 160px;
- 	 	background: white;
- 	 	
- 	 }
- 	 #home:hover
- 	 {
- 	 	background:#e3f2f2;
- 	 	width: 32px;
- 	 	height: 32px;
- 	 	border-radius: 35px;
-
- 	 }
-
- 	
- 	 #hakkımda
- 	 {
- 	 	width: 30px;
- 	 	height:30px;
- 	 	border-radius: 50px;
- 	 	margin-top: 35px;
- 	 	
- 	 }
- 	 #hakkımda:hover
- 	 {
- 	 	background:#e3f2f2;
- 	 	width: 32px;
- 	 	height: 32px;
-
- 	 }
- 	 #iletişim
- 	 {
- 	 	width: 30px;
- 	 	height:30px;
- 	 	margin-top: 35px;
- 	 	border-radius: 50px;
- 	 }
- 	 #iletişim:hover
- 	 {
- 	 	background:#e3f2f2;
- 	 	width: 32px;
- 	 	height: 32px;
- 	 }
- 	 #blog
- 	 {
- 	 	width: 30px;
- 	 	height:30px;
- 	 	margin-top: 35px;
- 	 	border-radius: 35px;
- 	 	
- 	 }
- 	 #blog:hover
- 	 {
- 	 	background:#e3f2f2;
- 	 	width: 32px;
- 	 	height: 32px;
- 	 }
- 	 
- 	 li{
- 	 	text-decoration: none;
- 	 	position: relative;
- 	 }
- 	 ul
- 	 {
- 	 	text-decoration: none;
- 	 	list-style-type: none;
- 	 	margin-left: -30px;
- 	 }
- 	 ul li a{
- 	 	text-decoration: none;
- 	 	display: block;
- 	 	border-bottom: 1px solid whitesmoke;
- 	 }
- 	 li:hover ul{
- 	 	display: block;
- 	 	text-decoration: none;
- 	 }
- 	 li a {
- 	 	display: block;
-  		text-decoration:none;
- 	 }
- 	 ul li ul
- 	 {
- 	 	width: 50px;
- 	 	right: 120px;
- 	 	height: 50px;
- 	 	margin-right: -30px;
- 	 	text-align: center;
- 	 	padding-top:10px ;
-
- 	 	display: none;
- 	 	position: relative;
- 	 	margin-top: -40px;
- 	 	background: white;
- 	 	list-style-type: none;
- 	 	text-decoration: none;
-
-
- 	 }
- 	 ul li ul li{
- 	 	background: #0F0B4E;
- 	 	width: 80px;
- 	 	height: 30px;
- 	 	border-radius: 5px;
- 	 	text-align: center;
- 	 	text-decoration: none;
- 	 	color: #D8D8DF;
- 	 	font-family: Tahoma;
- 	 }
-
- 	 ul li:hover ul
- 	 {
- 	 	display: block;
- 	 	position: absolute;
-
- 	 }
- 	 ul li ul li a{
- 	 	font-size: 15px;
- 	 	border-bottom: 1px solid whitesmoke;
- 	 	transition: all 3.s ease-in-out;
- 	 	text-decoration: none;
- 	 	color: black;
- 	 	text-align: center;
- 	 	position: absolute;
- 	 	text-decoration: none;
- 	 	
-
- 	 }
- 	
- 	 
-
- 	 
-
-</style>
-<script type="text/javascript">
-	</script>
-<body>
-	<div id="Anasayfa">
-		<div id="sol">
-			<center><a href="#"><img src="pp.jpg" id="ben"></a></center>
-			<center><a href="https://www.instagram.com/baranll1"><img src="instagram.png" id="instagram" title="İnstagram"></a></center>
-			<center><a href="https://twitter.com/baranll0"><img src="twitter.png" id="twitter" title="Twitter"></a></center>
-			<center><a href="https://www.linkedin.com/in/baran-güçlü-207b1a226/"><img src="linkedin.png" id="linkedin" title="Linkedin"></a></center>
-			<center><a href="https://github.com/Baranll0"><img src="github.png" id="github" title="GitHub"></a></center>
-		</div>
-		<div id="sag">
-			<div id="menu">
-				<ul>
-					<li><center><a href="Web_Ödev_Anasayfa.html" id="homea"><img src="home.png" id="home" title="Anasayfa"></a></center>
-						<a href="Web_Ödev_Blog" style="">
-						<ul>
-							<li>Anasayfa</li>
-						</ul>
-						</a>
-					</li>
-					<li><center><a href="Web_Ödev_Hakkımda.html" id="hakkımdaa"><img src="hakkımda.png" id="hakkımda" title="Hakkımda"></a></center>
-						<a href="Web_Ödev_Blog">
-						<ul>
-							<li>Hakkımda</li>
-						</ul>
-						</a>
-
-						
-					</li>
-					<li><center><a href="Web_Ödev_İletişim.html" id="iletişima"><img src="iletişim.png" id="iletişim" title="İletişim"></a></center>
-						<a href="Web_Ödev_Blog">
-						<ul>
-							<li>İletişim</li>
-						</ul>
-						</a>
-					</li>
-					<li><center><a href="Web_Ödev_Blog.html"><img src="blog.png" id="blog" title="Blog"></a></center>
-						<a href="Web_Ödev_Blog">
-						<ul>
-							<li>Blog</li>
-						</ul>
-						</a>
-						
-					</li>
-				</ul>
-			</div>
-			<div id="yazi">
-				<div id="isim">BARAN</div>
-				<div id="soyad">GÜÇLÜ</div>
-			</div>
-			<div id="tanitimyazi">
-				<p id="tanitim">WEB GELİŞTİRME,YAPAY ZEKA,SİBER GÜVENLİK  ·</p>
-				<p id="tanitim2">Üniversite Eposta: 02210224003@ogr.inonu.edu.tr</p>
-			</div>
-			<p id="Bilgilerim">Nesne tabanlı programlama ve Web geliştirme konusunda kendimi geliştirmeye çalışan  bir yazılım mühendisliği  öğrencisiyim.</p>
-		</div>
-
-		
+	}
+	.jumbotron
+	{
+		font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	}
+	</style>
+	<nav class="navbar navbar-inverse">
+		<ul class="snip1226" style="background-color: #021427;">
+			<li class="current"><a href="Web_Ödev_Anasayfa.html" data-hover="Home">Anasayfa</a></li>
+			<li><a href="Web_Ödev_Hakkımda.html" data-hover="About me">Hakkımda</a></li>
+			<li><a href="Web_Ödev_İletişim.html" data-hover="Contact">İletişim</a></li>
+			<li><a href="Web_Ödev_Blog.html" data-hover="Blog">Blog</a></li>
+			<li><a href="Proje_Sayfam.html" data-hover="portfolio">Projelerim</a></li>	
+		  </ul>
+	</nav>
+	<div class="col-sm-2 sidenav pr-md-5" style="background-color: #021427;">
+		<img src="pp.JPEG" alt="" class="img-circle img-responsive " width="150" height="150" id="pp">
+		<a href="https://www.instagram.com/baranll1/"><img src="instagram.png" alt="" class="img-responsive img-circle mx-md-auto" width="40px" height="40px" id="instagram"></a>	
+		<a href="https://twitter.com/Baranll0"><img src="twitter.png" alt="" class="img-responsive img-circle mx-md-auto" width="40px" height="40px" id="twitter"></a>	
+		<a href="https://www.linkedin.com/in/baran-güçlü-207b1a226/"><img src="linkedin.png" alt="" class="img-responsive img-circle mx-md-auto" width="40px" height="40px" id="linkedin"></a>	
+		<a href="https://github.com/Baranll0"><img src="github.png" alt="" class="img-responsive img-circle mx-md-auto" width="40px" height="40px" id="github"></a>
+		<br><br><br>
 	</div>
+	<div class="col-sm-10">
+		<div class="jumbotron">
+			<h1 style='text-align:center; font-size: 80px;' id="isim">BARAN GÜÇLÜ</h1>
+			<p style="font-size: 12.5px; text-align:center; color: rgb(97, 97, 102); font-weight: bold;">SOFTWARE ENGİNEER</p>
+			<div id="slider" class="carousel slide mx-sm-2 mx-lg-auto" data-interval="1500" >
+				<div class="carousel-inner" >
+					<div class="active item"><img src="siber.jpg" alt="" width="700" height="400"></div>
+					<div class="item"><img src="webdesign.jpg" alt="" width="700" height="400"></div>
+					<div class="item"><img src="yapayzeka.jpg" alt=""></div>
+				</div>
+				<ol class="carousel-indicators">
+					<li data-target="#slider" data-slide-to="0" class="active"></li>
+					<li data-target="#slider" data-slide-to="1"></li>
+					<li data-target="#slider" data-slide-to="2"></li>
+				</ol>   
+				<a class="carousel-control left" href="#slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a class="carousel-control right" href="#slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		</div>
+	</div>	
 </body>
 </html>
